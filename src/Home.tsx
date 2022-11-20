@@ -37,7 +37,7 @@ const ConnectButton = styled(WalletDialogButton)`
   height: 60px;
   margin-top: 10px;
   margin-bottom: 5px;
-  background: linear-gradient(180deg, #604ae5 0%, #813eee 100%);
+  background: linear-gradient(180deg, #cc9c4c 0%, #cc9c4c 100%);
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -465,14 +465,25 @@ const Home = (props: HomeProps) => {
     })();
   }, [refreshCandyMachineState]);
 
+  const EmgramImage = styled("img")`
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10%;
+  border-style: solid;
+  border-color: #e6c46c;
+  margin-bottom: 20px;
+  `
+
   return (
     <Container style={{ marginTop: 100 }}>
       <Container maxWidth="xs" style={{ position: "relative" }}>
+        <EmgramImage src="/logo.png" alt="Emgram"></EmgramImage>
         <Paper
           style={{
             padding: 24,
             paddingBottom: 10,
-            backgroundColor: "#151A1F",
+            backgroundColor: "#e6c46c",
             borderRadius: 6,
           }}
         >
